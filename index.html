@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografía Personal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="#inicio">Fotografía Personal</a>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Momentos que inspiran</h1>
+            <p>La belleza de la naturaleza a través de la fotografía.</p>
+            <a class="boton" href="#galeria">Ver galería</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="contenido" id="sobre-mi">
+            <div class="contenido-inner">
+                <h2>Sobre mí</h2>
+                <p>Soy Francisco. Me gusta la fotografía, descubrir paisajes y guardar momentos especiales en imágenes.</p>
+            </div>
+        </section>
+
+        <section class="contenido fondo-claro" id="galeria">
+            <div class="contenedor">
+                <h2>Galería de fotografías</h2>
+                <p>Una selección de paisajes que transmiten calma y belleza.</p>
+                <div class="galeria">
+                    <article class="tarjeta-foto">
+                        <img src="img/paisaje_flores.png" alt="Montañas y flores al amanecer">
+                        <h3>Amanecer entre flores</h3>
+                    </article>
+                    <article class="tarjeta-foto">
+                        <img src="img/paisaje_lago.png" alt="Lago de montaña con reflejos">
+                        <h3>Reflejos de la naturaleza</h3>
+                    </article>
+                    <article class="tarjeta-foto">
+                        <img src="img/paisaje_atardecer.png" alt="Árbol y montañas al atardecer">
+                        <h3>Colores del atardecer</h3>
+                    </article>
+                    <article class="tarjeta-foto">
+                        <img src="img/fondo_azul.png" alt="Capas de montañas azules">
+                        <h3>Horizonte azul</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenido" id="equipo">
+            <div class="contenedor">
+                <h2>Presentación del equipo</h2>
+                <p>Personas que comparten la creatividad y el gusto por la fotografía.</p>
+                <div class="equipo">
+                    <article class="miembro">
+                        <img src="img/perfil_1.png" alt="Avatar de integrante del equipo">
+                        <h3>Sofia Martinez</h3>
+                        <p>Creatividad y fotografía.</p>
+                    </article>
+                    <article class="miembro">
+                        <img src="img/perfil_2.png" alt="Avatar de integrante del equipo">
+                        <h3>Francisco Rafael</h3>
+                        <p>Paisajes y edición.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenido fondo-claro" id="contacto">
+            <div class="contenido-inner">
+                <h2>Contacto</h2>
+                <p>Déjame un mensaje.</p>
+                <form id="formulario">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" required>
+                    <label for="correo">Correo electrónico</label>
+                    <input id="correo" name="correo" type="email" required>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <button class="boton" type="submit">Enviar mensaje</button>
+                    <p id="respuesta" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

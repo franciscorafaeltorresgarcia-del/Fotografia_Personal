@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+   background-image: url('../fotografia_personal/img/prog1.png');
+   background-size: cover;
+   background-position: cover;
+   background-attachment: fixed;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   }
+   .hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(15, 23, 42, 0.3);
+    z-index: 1;
+    
+   }
+   .hero-content{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 20px;
+
+
+   }
+    .hero-content h1{
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        text-shadow: 2px, 2px, 2px, 8px rgba(0, 0, 0, 0.5);    
+
+    }
+    .hero-content p{
+        margin-bottom: 1.2rem;
+        font-size: 1.25rem;
+        font-weight: 300;
+        text-shadow: 1px, 1px 1px, 4px rgba(0,0,0,0.5);
+
+        
+    }
+    .btn-hero{
+        padding: 14px 32px;
+        background-color: #fff;
+        color: #0f172a;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 300;
+        border-radius: 12px;
+        transition: all 1s ease;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        
+    }
+    .btn-hero:hover{
+        font-size: 15px;
+        color: #cecece;
+        background-color: #fff;
+        box-shadow: 0px, 6px 20px rgba(56, 189, 248, 0.2);
+    }
+    .contenido{
+        background-color: #f8faf6;
+        padding: 100px 20px;
+        text-align:  center;
+    }
+.contenido-inner{
+    margin: 0 auto;
+    max-width: 800px;
+
+}
+
+.contenido h2{
+    font-size:2.5rem;
+    margin-bottom: 1.75rem
+}
+.nav__toggle{
+    display: none;
+}
+.navbar__logo{
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #9a9fa8;
+}
+.nav__links{
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav__links a{
+    color: #dfe1e4;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.15s ease;
+
+
+}
+.nav__links a:hover{
+    color: #7ab9ea;
+    font-size: 1.34rem;
+    font-weight: 600;
+
+
+}
